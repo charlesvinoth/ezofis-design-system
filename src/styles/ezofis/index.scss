@@ -1,0 +1,103 @@
+@import "../quasar.variables.scss";
+@import "./typography.scss";
+@import "./border.scss";
+@import "./background-color.scss";
+@import "./text-color.scss";
+@import "./tooltip.scss";
+
+:root {
+  --bodyCol: #f8fafc;
+}
+
+body {
+  background-color: var(--bodyCol);
+  color: $gray-10;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid $gray-2;
+  border-radius: 4px;
+}
+
+/* hover */
+
+.hover:hover {
+  background-color: $gray-2;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hover-shadow:hover {
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* ... */
+
+/* code */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  text-shadow: none !important;
+  tab-size: 2 !important;
+  margin: 0 !important;
+  background-color: transparent !important;
+  white-space: pre-wrap !important;
+  color: inherit !important;
+}
+
+pre[class*="language-"] {
+  padding: 24px !important;
+}
+
+/* ... */
+
+/* field */
+
+.field {
+  min-height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.field-normal {
+  border: 1px solid $gray-3;
+}
+
+.field-focused {
+  box-shadow: 0 0 0 2px rgba(0, 188, 212, 0.25);
+  border: 1px solid $secondary;
+}
+
+.field-error {
+  box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.25);
+  border: 1px solid $red;
+}
+
+.field input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.field input::-webkit-outer-spin-button,
+.field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.field input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ... */
+
+.no-line-height {
+  line-height: 0 !important;
+}
